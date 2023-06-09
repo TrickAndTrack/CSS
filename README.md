@@ -170,3 +170,155 @@ right: The element is floated to the right side of its container. Content to the
 
 ```
 ![image](https://github.com/TrickAndTrack/CSS/assets/73180409/7f0c6037-6b6b-44fb-acd3-b1a6ae6b0f68)
+
+### Max- width and Background-images
+
+This Example is background image for the entire page:
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('TrickAndTrack.jpg');
+}
+</style>
+</head>
+<body>
+
+<h1>Background Image</h1>
+
+<p>By default, the background image will repeat itself if it is smaller than the element where it is specified, in this case the body element.</p>
+
+</body>
+</html>
+
+```
+This Example is background image for Specify Content in the HTML body
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+  background-image: url('TrickAndTrack.jpg');
+  max-width:30%
+  height: 100px;
+ }
+</style>
+</head>
+<body>
+
+<h2>Background Image</h2>
+
+<p>You can specify background images<br>
+for any visible HTML element.<br>
+In this example, the background image<br>
+is specified for a div element.<br>
+By default, the background-image<br>
+will repeat itself in the direction(s)<br>
+where it is smaller than the element<br>
+where it is specified. (Try resizing the<br>
+browser window to see how the<br>
+background image behaves.</p>
+
+</body>
+</html>
+```
+
+### Text Decoration 
+text-indent: The text-indent property specifies the indentation of the first line in a text-block.
+test-shadow: 
+
+
+```
+p{
+  word-Spacing:2px;
+  latter-Spacing: 2px
+  text-indent: 20px;
+  text-shadow: 2px 5px 5px #000; 
+  // shadow will go upside
+  text-shadow: 2px -5px 5px #000; 
+}
+```
+### Pseudo-states
+
+The `hover` selector is used to select elements when you mouse over them.
+> The `hover` selector can be used on all elements, not only on links.
+> Use the :link selector to style links to unvisited pages, the :visited selector to style links to visited pages, and the :active selector to style the active link.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* mouse over link */
+a:hover {
+  color: green;
+}
+
+/* aftar selected link */
+a:active {
+  color: blue;
+} 
+</style>
+</head>
+<body>
+
+<p> Mouse over and click the link: 
+<a href="https://github.com/TrickAndTrack"> TrickAndTrack </a>
+</p>
+
+</body>
+</html>
+
+```
+
+### Focus & Border Redius
+
+The :focus selector is used to select the element that has focus.
+
+The Border Radius is used to corner convert into a curve.
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+input:focus {
+  background-color: yellow;
+  color: #0000;
+  outline: none;
+  border: 1px solid #000;
+  border-redius:3px;
+  border: 1px solid transperant;
+}
+</style>
+</head>
+<body>
+
+<h1>Demo of the :focus selector</h1>
+
+<p>Click inside the text fields to see a yellow background:</p>
+
+<form>
+  First name: <input type="text" name="firstname"><br>
+  Last name: <input type="text" name="lastname">
+</form>
+
+</body>
+</html>
+```
+### Z-index
+
